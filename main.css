@@ -8,24 +8,31 @@ body{
    }
    .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: 120px 400px 200px 120px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 120px 400px 170px 250px 120px;
         color: black; 
       }
       .header-bar {
-    grid-column: 1 / span 3;
-    grid-row: 1;
-    background: url("header_bg.png");
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        background: url("header_bg.png");
       }
 
-        ul li{
+       ul {
+        float: right;
+        grid-column: 2 / span 2;
+        grid-row: 1;
+       }
+       li {
+         font-size: 20px;
+         line-height: 115px;
+         display: inline;
+         margin-right: 40px;
          
-        position: relative;
-        display: inline-block;
-        
-
-
-        }
+      }
+      a {
+        text-decoration: none;
+      }
 
       .content-section {
         grid-column: 1 / span 3;
@@ -33,75 +40,57 @@ body{
         background: url("banner_bg.png");
       }
       .banner {
-          display: block;
-      position: absolute;    
-      margin-right: auto;
-      margin-top: 20px;
-      margin-left: 36px;
+      grid-column: 1 / span 2;
+      grid-row: 2;
+      margin: 24px 40px 0px 40px;
       
       }
-        .sub-content-one {
-      position: relative;
-      grid-column: 1;
-      grid-row: 3;
-      background: url("fade-slider.png") no-repeat;
-      margin-top: 10px;
-      left: 20px;
-        }
+      .sub-content-one {
+        grid-column: 1;
+        grid-row: 3;
+        background: url("fade-slider.png") no-repeat;
+        margin: 12px 0px 0px 24px;
+      }
       .sub-content-two {
-        position: relative;
         grid-column: 2;
         grid-row: 3;
         background: url("nivo-slider.png") no-repeat;
         margin-top: 10px;
-        left: 25px;
+        margin: 12px 0px 0px 24px;
       }
       .sub-content-three {
-        position: relative;
         grid-column: 3;
         grid-row: 3;
         background: url("bonus-3d-slider.png") no-repeat;
         margin-top: 10px;
-        left: 50px;
+        margin: 12px 0px 0px 24px;
       }
       .footer {
         grid-column: 1 / span 3;
-        grid-row: 4;
+        grid-row: 5;
         background: url("footer_bg.png");
-        position: relative;
-        top: 200px;
       }
       .bannerText {
-        position: absolute;
-        grid-column: 2;
-        grid-row: 3;
+        grid-column: 3;
+        grid-row: 2;
         color: white;
-        left: 670px;
-        padding-right: 210px;
-        padding-left: 280px;
+        margin: 24px 32px 0px 20px;
       }
       .contentonetext {
-        position: relative;
-        bottom: 150px;
-        left: 20px;
-        font-size: 13px; 
-        padding-right: 80px;
+        grid-row: 4;
+        grid-column: 1;
+        font-size: 13px;
+        margin-left: 16px;
       }
       .contenttwotext {
+        grid-row: 4;
         grid-column: 2;
-        grid-row: 3;
-        position: relative;
-        top: 165px;
-        left: 40px;
-        font-size: 12px;
-        padding-right: 80px;
+        font-size: 13px; 
+        margin: 0px 0px 0px 16px;
       }
       .contentthreetext {
+        grid-row: 4;
         grid-column: 3;
-        grid-row: 3;
-        position: relative;
-        top: 165px;
-        left: 50px;
-        font-size: 13px;
-        padding-right: 80px;
+        font-size: 13px; 
+        margin: 0px 0px 0px 16px;
       }
