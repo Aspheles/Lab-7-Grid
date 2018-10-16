@@ -1,5 +1,5 @@
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
   width: 100%;
 }
   .page-width {
@@ -22,12 +22,14 @@ body{
         float: right;
         grid-column: 2 / span 2;
         grid-row: 1;
+        
        }
        li {
          font-size: 20px;
          line-height: 115px;
          display: inline;
          margin-right: 40px;
+         
          
       }
       a {
@@ -63,7 +65,7 @@ body{
         grid-row: 3;
         background: url("bonus-3d-slider.png") no-repeat;
         margin-top: 10px;
-        margin: 12px 0px 0px 24px;
+        margin: 12px 2px 0px 24px;
       }
       .footer {
         grid-column: 1 / span 3;
